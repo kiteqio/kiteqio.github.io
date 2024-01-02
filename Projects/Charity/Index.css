@@ -35,8 +35,8 @@
 }
 
 .crtpiccontainr {
-    width: 54%;
-    height: 100%;
+    width: 50%;
+    height: 80%;
     object-fit: initial;
     min-width: 93%;
 }
