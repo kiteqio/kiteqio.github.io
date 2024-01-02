@@ -1,0 +1,204 @@
+
+*:not(head, script, html, style, script, input, .color-picker__controls, .color-picker__control ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: 100;
+    /* border: 1px solid #cf0b4d; */
+    margin: 0;
+    padding: 0;
+    /* transition: 4s; */
+    text-decoration: none;
+    /* text-align: center; */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    /* border: 1px solid #0a0adfa3; */
+    /* padding-left: 0px; */
+    /* margin-left: 4px; */
+    /* height: max-content; */
+    /* min-height: max-content; */
+    font-family: system-ui;
+}
+
+.crtrow {
+    width: 100%;
+    height: 552px;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.crtpiccontainr {
+    width: 54%;
+    height: 100%;
+    object-fit: initial;
+    min-width: 93%;
+}
+
+video.crtvidcontainr {
+    height: 100%;
+    width: 30%;
+    object-fit: initial;
+}
+
+text.crtpiccontainrtext {
+    font-size: xxx-large;
+    color: white;
+    background-color: #0c0c0cbd;
+    padding: 12px;
+    border: 2px solid black;
+}
+
+.navigation {
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-between;
+    height: 62px;
+}
+
+.arrow {
+    font-size: 58px;
+    font-weight: 400;
+    height: 47px;
+    border: 2px solid gray;
+    border-radius: 32px;
+    vertical-align: unset;
+}
+
+.SupportContainer {
+    font-size: 32px;
+    width: 100%;
+    flex-direction: row;
+    /* padding: 11px; */
+    /* justify-content: space-around; */
+    /* border-radius: 46px; */
+    /* justify-content: flex-end; */
+    position: sticky;
+    /* margin-bottom: -8px; */
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+
+button.Button {
+    height: 44px;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    padding: 19px 8px;
+    margin-right: 13px;
+}
+
+.buttonscontainer {
+    flex-direction: row;
+    width: 85%;
+    padding: 10px 7px;
+    justify-content: flex-start;
+    background-color: #393939;
+    border-radius: 8px;
+}
+
+h2.options {
+    background-color: #cf0b4d;
+    color: wheat;
+    padding: 33px 0px;
+}
+
+.options {
+    background-color: #cf0b4d;
+}
+
+h1.header {
+    color: #753d3d;
+}
+
+.Headmain {
+    padding: 13px 0px;
+    width: 100%;
+    background-color: #d1455e;
+    color: white;
+    height: 142px;
+}
+
+.headercontainer {
+    width: 100%;
+    justify-content: center;
+}
+
+div#country {
+    width: 100%;
+}
+
+.prntContainer {
+    height: 198px;
+    width: 138px;
+    display: inline-block;
+    margin-left: 0;
+    margin: 24px;
+    box-shadow: 10px 2px 19px white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.icon {
+    height: 70%;
+    width: 100%;
+}
+
+div#donations {
+    display: inline-block;
+    height: 16px;
+    width: 100%;
+    margin-top: 23px;
+}
+
+.text {
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+
+  @media only screen and (orientation: portrait) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+body {
+    background-color: #1e1e1e;
+}
+
+div#countrycontainer {
+    position: relative;
+    /* height: 770px; */
+}
+
+.SupportContainerbttn {
+    position: absolute;
+    bottom: 96px;
+    right: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+h1#title {
+    color: white;
+}
+
+h1.support {
+    color: white;
+    font-size: 42px;
+    padding: 32px;
+}

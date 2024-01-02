@@ -1,0 +1,179 @@
+<html>
+ <head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Index.css">
+ </head>
+
+ <body>
+
+
+ <div>
+    <h1>
+        Political Crisis
+    </h1>
+
+    <div>
+        <h2>
+            Homeless, poverty,
+        </h2>
+
+        <h2>Donate, support, vote, volunteer, environmental development</h2>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div>
+    <div>left arrow</div>
+  <h1>Palestine</h1>
+  <div>right arrow</div>
+ </div>
+
+
+ <script>
+
+
+var palestine = [
+    ["pictures",[["37 000 have been killed palestine", "Palestine/picture/picture1.jpg"], ["37 000 have been killed", "Palestine/picture/picture2.png"], ["37 000 have been killed", "Palestine/picture/picture3.jpeg"]]],
+    ["video",[["video1.mp4"]]],
+    ["pictures",[["37 000 have been killed palestine", "Palestine/picture/picture4.jpg"], ["37 000 have been killed", "Palestine/picture/picture5.jpg"], ["37 000 have been killed", "Palestine/picture/picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+    ["pictures",[["37 000 have been killed palestine", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+ ]
+
+ var ukraine = [
+    ["pictures",[["37 000 have been killed ukraine", "palestine/picture/picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+    ["video",[["video1.mp4"]]],
+    ["pictures",[["37 000 have been killed ukraine", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+    ["pictures",[["37 000 have been killed ukraine", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+ ]
+
+
+ var india = [
+    ["pictures",[["37 000 have been India", "palestine/picture/picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+    ["video",[["video1.mp4"]]],
+    ["pictures",[["37 000 have been India", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+    ["pictures",[["37 000 have been India", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"], ["37 000 have been killed", "picture1.jpg"]]],
+ ]
+
+
+
+
+
+ var rows = [ palestine, ukraine, india ]
+
+
+
+//  chndlair
+ // i feel like the mi6 needs help
+
+
+ function slider(country) {
+ 
+    var crtrow = document.createElement("div")
+    crtrow.setAttribute("class", "crtrow")
+
+     for(a=0; a<=palestine.length + -1; a++) {
+        var sliderContainer = document.createElement("div");
+        sliderContainer.setAttribute("class", "sliderContainer")
+        if(country[a][0] == "pictures"){
+            for(b=0; b<=country[a][1].length + -1; b++) {
+            var crtpiccontainr = document.createElement("div");
+            crtpiccontainr.setAttribute("class", "crtpiccontainr")
+
+            var crtpiccontainrtext = document.createElement("text");
+            crtpiccontainrtext.setAttribute("class", "crtpiccontainrtext")
+            
+
+            crtpiccontainr.appendChild(crtpiccontainrtext)
+            crtpiccontainr.style.backgroundImage = "url("+country[a][1][b][1]+")";
+            crtpiccontainrtext.innerText = country[a][1][b][0];
+
+            sliderContainer.appendChild(crtpiccontainr)
+            
+
+            }
+        } else if(country[a][0] == "pictures") {}
+        crtrow.appendChild(sliderContainer)
+     }
+
+     document.body.appendChild(crtrow)
+ }
+
+ 
+
+
+ function functionrows() {
+   for(i=0; i<=rows.length + -1; i++) {
+  //  console.log(rows.length)
+    console.log(i)
+    slider(rows[i])
+   }
+ }
+
+ functionrows() 
+
+ function sliderShow() {
+
+    
+
+    getsliderContainer()
+
+ setTimeout(() => {
+  console.log("Delayed for 1 second.");
+  sliderShow()
+}, 1000);
+
+}
+
+sliderShow()
+
+
+
+
+function getsliderContainer() {
+const nodeList = document.querySelectorAll(".sliderContainer");
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].style.backgroundImage = "linear-gradient(45deg, black, red)";
+
+  var sliderchldnodelngth = nodeList[i].childNodes.length;
+
+
+  for(g=0; g<=nodeList[i].childNodes.length + -1; g++) {
+    nodeList[i].childNodes[g].innerText = "tuvyvikbk"+g
+
+  }
+
+ }
+}
+
+
+
+
+   </script>
+
+ </body>
+
+
+<!--  
+    Some are by political crisis like wars
+    Some are the after effects of a political crisis
+    some are economical
+    some are natural emergency disasters
+-->
+
+
+
+
+
+
+
+
+
+
+</html>

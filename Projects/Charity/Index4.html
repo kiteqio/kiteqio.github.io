@@ -1,0 +1,248 @@
+<html>
+ <head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Index.css">
+ </head>
+
+ <body>
+
+
+ <div class="headercontainer">
+    <div class="Headmain">
+        <h1>
+            Environmental Political Crisis
+        </h1>
+    </div>
+   
+
+    <div class="supportContainer">
+        <h1 class="header">WHAT YOU CAN DO</h1>
+        <div class="optionscontainer">
+        <p>Support</p>
+        <p>Bridges</p>
+        <p>Stratagise</p>
+        <p>Development</p>
+        <p>Vote</p>
+        <p>Solutions</p>
+        <p>Donate</p>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="navigation">
+<div id="leftarrow" class="arrow"> < </div>
+  <h1 id="title">Palestine</h1>
+  <div id="rightarrow" class="arrow"> > </div>
+ </div>
+
+
+ <div id="countrycontainer">
+ <div id="country">
+
+ </div>
+ <div class="SupportContainerbttn">
+    <div class="buttonscontainer">
+    <button class="Button Donate">Donate</button>
+    <button class="Button Support">Support</button>
+    <button class="Button Volunteer">Volunteer</button>
+    </div>
+ </div>
+</div>
+
+
+
+
+
+ <div id="donations" class="Donations">
+ <h1 class="support">Support the top country with one of the organasation below</h1>
+ </div>
+
+
+
+ <script>
+
+
+var Palestine = [
+["video", "Palestine/video/video1.mp4"],
+    ["picture", "37 000 have been killed palestine", "Palestine/picture/picture1.jpg"],
+    ["picture", "37 000 have been killed", "Palestine/picture/picture2.png"],
+    ["picture", "37 000 have been killed", "Palestine/picture/picture3.jpeg"],
+    
+ ];
+
+    var Ukraine = [
+    ["picture", "37 000 have been killed Ukraine", "Palestine/picture/picture1.jpg"],
+    ["picture", "37 000 have been killed", "Palestine/picture/picture2.png"],
+    ["picture", "37 000 have been killed", "Palestine/picture/picture3.jpeg"],
+    ["video", "Palestine/video/video2.mp4"] ];
+
+
+    var India = [
+    ["picture", "37 000 have been killed India", "Palestine/picture/picture1.jpg"],
+    ["picture", "37 000 have been killed", "Palestine/picture/picture2.png"],
+    ["picture", "37 000 have been killed", "Palestine/picture/picture3.jpeg"],
+    ["video", "Palestine/video/video3.mp4"] ];
+
+
+
+    var charities = [["British red cross", "brc.jpg"], 
+    ["Cathlic Charities USA", "catholiccharitiesusa.png"], 
+    ["human appeal", "humanappeal.jpg"], 
+    ["world food programme", "wfp.png"],
+    ["ICRC", "icrc.png"]
+];
+
+var rows = [ Palestine, Ukraine, India ]
+
+var titles = ["Palestine", "Ukraine", "India"]
+
+var buttno = 0;
+
+
+
+
+function crtIcons() {
+   for(a=0; a<=charities.length + -1; a++) {
+
+    var prntContainer = document.createElement("div");
+    prntContainer.setAttribute("class", "prntContainer");
+
+    prntContainer.onclick = function() {
+        window.open("https://www.google.com/search?q="+charities[a][0] + " " + titles[buttno]);
+    }
+
+    var icon = document.createElement("div");
+    icon.style.backgroundImage = "url(charities/"+charities[a][1]+")";
+    icon.setAttribute("class", "icon");
+    
+
+    var text = document.createElement("div");
+    text.innerText = charities[a][0]
+    text.setAttribute("class", "text");
+
+
+    prntContainer.appendChild(icon)
+    prntContainer.appendChild(text)
+    document.getElementById("donations").appendChild(prntContainer)
+
+   }
+}
+
+crtIcons()
+
+
+function crtrows() {
+
+    document.getElementById("country").innerHTML = ""
+    var crtrow = document.createElement("div");
+crtrow.setAttribute("class", "crtrow")
+
+country = rows[buttno]
+for(a=0; a<=country.length + -1; a++) {
+    
+    if(country[a][0] == "picture") {
+        
+    var crtpiccontainr = document.createElement("div");
+            crtpiccontainr.setAttribute("class", "crtpiccontainr")
+
+            var crtpiccontainrtext = document.createElement("text");
+            crtpiccontainrtext.setAttribute("class", "crtpiccontainrtext")
+            
+            crtpiccontainr.appendChild(crtpiccontainrtext)
+            crtpiccontainr.style.backgroundImage = "url("+country[a][2]+")";
+            crtpiccontainrtext.innerText = country[a][1];
+
+            crtrow.appendChild(crtpiccontainr)
+    } else  {
+       
+        var crtpiccontainr = document.createElement("video");
+        crtpiccontainr.setAttribute("class", "crtpiccontainr")
+        crtpiccontainr.setAttribute("controls","controls")   
+        crtpiccontainr.setAttribute("src", country[a][1])
+        crtrow.appendChild(crtpiccontainr)
+    }
+            
+ }
+   document.getElementById("country").appendChild(crtrow)
+}
+
+crtrows()
+
+function functionsliders() {
+    for(b=0; b<=rows.length + -1; b++) {
+       /// funcrows(rows[b])
+    }
+
+ }
+
+ functionsliders()
+
+
+document.getElementById("rightarrow").onclick = function () {
+
+
+
+    slidermove("right")
+}
+
+document.getElementById("leftarrow").onclick = function () {
+
+    slidermove("left")
+}
+
+
+function slidermove(variable) {
+      if(variable == "right") {
+        if(buttno >= rows.length + -1){
+            buttno  = 0;
+        } else{ 
+        buttno = buttno + 1
+        }
+      }
+      else if(variable == "left") {
+        if(buttno <= 0){
+            buttno  = rows.length - 1;
+        } else{ 
+        buttno = buttno + -1;
+        }
+      }
+      document.getElementById("title").innerText = titles[buttno]
+
+      crtrows()
+      console.log(buttno)
+}
+
+
+
+
+   </script>
+
+ </body>
+
+
+<!--  
+    Some are by political crisis like wars
+    Some are the after effects of a political crisis
+    some are economical
+    some are natural emergency disasters
+-->
+
+
+
+
+
+
+
+
+
+
+</html>
