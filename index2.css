@@ -50,7 +50,7 @@ url(background3.jpg); */justify-content: flex-start;flex-direction: column;/* ba
     background-attachment: fixed;
     background-size: 100% 100%;
     width: 100%;
-    font-size: 22px;
+    font-size: 19.3px;
 }
 
 .container_projects {
@@ -134,7 +134,7 @@ div#row7column1 {
 
 
 .column h1 {
-    font-size: xxx-large;
+    font-size: 38.6PX;
 }
 
 .container_projects h1 {
