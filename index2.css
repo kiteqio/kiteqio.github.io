@@ -42,7 +42,7 @@ url(background3.jpg); */justify-content: flex-start;flex-direction: column;/* ba
 
 .container_profile {
     flex-direction: column;
-    height: 560px;
+    height: 710px;
     justify-content: space-evenly;
     background-image: linear-gradient(to bottom, rgb(0 0 0 / 53%), rgb(0 0 0)), url(background3.jpg);
     /* justify-content: flex-start; */
@@ -50,6 +50,7 @@ url(background3.jpg); */justify-content: flex-start;flex-direction: column;/* ba
     background-attachment: fixed;
     background-size: 100% 100%;
     width: 100%;
+    font-size: 22px;
 }
 
 .container_projects {
@@ -58,6 +59,7 @@ url(background3.jpg); */justify-content: flex-start;flex-direction: column;/* ba
     width: 100%;
     flex-direction: column;
     background-attachment: fixed;
+    /* height: 1900px; */
 }
 
 .row {
@@ -81,6 +83,12 @@ url(background3.jpg); */justify-content: flex-start;flex-direction: column;/* ba
     /* background-image: linear-gradient(to bottom, rgb(0 0 0 / 53%), rgb(0 0 0)); */
 }
 
+
+div#row0column01 {
+    background-image: url(disocrdone.PNG);
+    /* background-image: linear-gradient(to bottom, rgb(0 0 0 / 53%), rgb(0 0 0)), url(pixiqu.PNG); */
+}
+
 div#row0column1 {
     background-image: url(pixiqu.PNG);
     /* background-image: linear-gradient(to bottom, rgb(0 0 0 / 53%), rgb(0 0 0)), url(pixiqu.PNG); */
@@ -99,12 +107,12 @@ div#row2column1 {
     background-image: url(projectnews.png);
 }
 div#row3column1 {
-    background-image: url(japanese.png);
+    background-image: url(japanesenew.png);
     /* background-size: cover; */
 }
 
 div#row4column1 {
-    background-image: url(artgallery.png);
+    background-image: url(artjs.png);
     /* background-size: cover; */
 }
 
@@ -142,3 +150,5 @@ a.rowcontainer {
     height: max-content;
     margin-bottom: 52px;
 }
+
+h2 {}
