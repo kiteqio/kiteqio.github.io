@@ -63,7 +63,7 @@ url(background3.jpg); */justify-content: flex-start;flex-direction: column;/* ba
 }
 
 .row {
-    height: 45vh;
+    height: 105vh;
     width: 80vw;
     flex-direction: row;
     box-shadow: -14px 16px 20px 14px #180d0d69;
@@ -152,3 +152,4 @@ a.rowcontainer {
 }
 
 h2 {}
+
