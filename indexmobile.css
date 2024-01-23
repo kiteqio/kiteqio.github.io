@@ -39,6 +39,8 @@ div#row0column01 {
     div#row0 {
         flex-direction: column;
         height: 74vh;
+        width: 90vw;
+        padding: 0px;
     }
     
     .column.column0 {
@@ -54,4 +56,8 @@ div#row0column01 {
         width: 100%;
     }
 
+}
+
+.linkscontainer {
+    width: 100%;
 }

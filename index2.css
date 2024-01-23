@@ -149,7 +149,24 @@ h1.dividers {
 a.rowcontainer {
     height: max-content;
     margin-bottom: 52px;
+    padding: 0PX;
 }
 
 h2 {}
 
+
+
+a.github {
+    height: 8px;
+}
+
+img.githubimg {
+    height: 68px;
+}
+
+.linkscontainer {
+    width: 700px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+}
