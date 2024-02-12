@@ -17,12 +17,12 @@
     text-align: center;
 }
 body  {background-image: linear-gradient(to bottom, rgb(0 0 0 / 83%), rgb(0 0 0 / 85%)),
-url(background.jpg);justify-content: flex-start;flex-direction: column;background-attachment: fixed;height: max-content;}
+url(background.jpg);justify-content: flex-start;/* flex-direction: column; *//* background-attachment: fixed; *//* height: max-content; *//* width: 67vw; */min-height: 100vh;}
 
 @media only screen and (orientation: portrait) {
 
-body  {background-image: linear-gradient(to bottom, rgb(0 0 0 / 95%), rgb(0 0 0 / 99%)),
-url(background3.jpg);justify-content: flex-start;flex-direction: column;background-attachment: fixed;background-size: 100% 100%;}
+body  {/* background-image: linear-gradient(to bottom, rgb(0 0 0 / 95%), rgb(0 0 0 / 99%)),
+url(background3.jpg); *//* justify-content: flex-start; *//* flex-direction: column; *//* background-attachment: fixed; *//* background-size: 100% 100%; */}
 }
 
 
@@ -36,7 +36,7 @@ url(background3.jpg);justify-content: flex-start;flex-direction: column;backgrou
 
 .rows {
     flex-direction: row;
-    height: 250px;
+    height: 500px;
     width: 100%;
 }
 
@@ -49,8 +49,9 @@ url(background3.jpg);justify-content: flex-start;flex-direction: column;backgrou
 
 .background {
     width: 50%;
-    background-color: #0000001c;
+    background-color: #31313182;
     height: 100%;
+    backdrop-filter: blur(3px);
 }
 
 .Skills {
@@ -67,7 +68,7 @@ url(background3.jpg);justify-content: flex-start;flex-direction: column;backgrou
 }
 
 img.portfolioicons {
-    height: 82px;
+    height: 157px;
     /* box-shadow: -6px 6px 2px 2px #000000a6; */
     /* border-radius: 100%; */
 }
@@ -115,7 +116,7 @@ a.a_link {
     margin: 32px 0px;
 }
 
-.header_Container {/* background-image: url("webimages/city.jfif"); */width: 100%;height: 450px;background-image: linear-gradient(to bottom, rgb(0 0 0 / 53%), rgb(0 0 0)), url(webimages/background2.jpg);}
+.header_Container {/* background-image: url("webimages/city.jfif"); */width: 100%;height: 450px;background-image: linear-gradient(to bottom, rgb(0 0 0 / 53%), rgb(0 0 0)), url(webimages/background2.jpg);justify-content: space-around;}
 
 .aboutrow {
     width: 100%;
@@ -128,6 +129,8 @@ a.a_link {
     background-color: black;
     margin: 18px 22px;
     border-radius: 22px;
+    font-size: 2rem;
+    width: 83%;
 }
 
 .linkscontainer {
@@ -150,14 +153,32 @@ img.githubimg {
 
 .contact_container {
     width: 100%;
+    /* height: 46vh; */
 }
 
 h1.contact_title {
-    font-size: larger;
+    font-size: 1.8rem;
 }
 
 .home_container {
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)), url(webimages/background1.jpg);
-    background-size: 153% 100%;
+    background-size: 103% 100%;
+}
+
+a p {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.row0 h1 {
+    margin: 0px 0px 40px 0px;
+}
+
+.columntext h1 {
+    font-size: 5.9rem;
+}
+
+.title_container h1 {
+    font-size: 3.9rem;
 }

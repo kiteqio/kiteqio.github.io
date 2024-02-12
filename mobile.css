@@ -1,0 +1,36 @@
+@media only screen and (orientation: portrait) {
+
+    body  {
+    /* background-image: linear-gradient(to bottom, rgb(0 0 0 / 95%), rgb(0 0 0 / 99%)),
+    url(background3.jpg); */
+    /* justify-content: flex-start; */
+    /* flex-direction: column; */
+    /* background-attachment: fixed; */
+    /* background-size: 100% 100%; */
+    }
+    .columntext h1 {
+        font-size: x-large;
+    }
+    
+    a.a_link {
+        height: 290px;
+        width: 92%;
+    }
+
+    a p {
+        font-size: larger;
+    }
+
+    .title_container h1 {
+        font-size: 2rem;
+    }
+    
+    .rows {
+        height: 252px;
+    }
+
+}
+
+
+
+
