@@ -5,7 +5,7 @@
     flex-direction: column;
     font-family: sans-serif;
     font-weight: 100;
-    /* border: 1px solid #cf0b4d; */
+    border: 1px solid #cf0b4d;
     margin: 0;
     padding: 0;
     /* transition: 4s; */
@@ -179,3 +179,40 @@ div#menucrtTextInput {
 }
 
 .csscrtInpelemntParent {}
+
+.cssInpelemntParentIcons {
+    width: 47px;
+    height: 60px;
+    flex-direction: column;
+    position: absolute;
+    left: -51px;
+}
+
+input.csscrtInpelemnt {
+    width: 220px;
+    min-width: 2px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+}
+
+div#cancel {
+    position: absolute;
+    z-index: 88;
+}
+
+.csssqreelement {
+    height: 100%;
+    width: 100%;
+}
+
+.csscircleelement {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.csscrtInpelemntParentcircle {
+    border-radius: 100%;
+}

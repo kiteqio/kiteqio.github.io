@@ -57,7 +57,7 @@
               crtInpelemnt = document.createElement("input")
               crtInpelemnt.setAttribute("class", "csscrtInpelemnt")
               crtInpelemnt.setAttribute("data-first-name", "input");
-              crtInpelemnt.setAttribute("value", "type here");
+              crtInpelemnt.setAttribute("value", "type");
          
               crtInpelemnt.oninput = function () {
                  //alert(this.value.length)
@@ -112,7 +112,7 @@
             document.getElementById("addsquare").onclick = function() {
               crtInpelemntParent = document.createElement("div")
               crtInpelemntParent.setAttribute("class", "csscrtInpelemntParent")
-              crtInpelemntParent.setAttribute("data-input-type", "square")
+              crtInpelemntParent.setAttribute("data-input-type", "input")
               crtInpelemntParent.style.position = "absolute"
               crtInpelemntParent.style.left = 35 + "%";
               crtInpelemntParent.style.top = 35 + "%";
@@ -171,75 +171,12 @@
               parentElement = crtInpelemntParent;
             }
 
-            document.getElementById("crtcircle").onclick = function() {
-              crtInpelemntParent = document.createElement("div")
-              crtInpelemntParent.setAttribute("class", "csscrtInpelemntParentcircle")
-              crtInpelemntParent.setAttribute("data-input-type", "circle")
-              crtInpelemntParent.style.position = "absolute"
-              crtInpelemntParent.style.left = 35 + "%";
-              crtInpelemntParent.style.top = 35 + "%";
-
-              crtInpelemnt = document.createElement("div")
-              crtInpelemnt.setAttribute("class", "csscircleelement")
-              crtInpelemnt.setAttribute("data-first-name", "input");
-              crtInpelemnt.setAttribute("value", "type");
-         
-              crtInpelemnt.oninput = function () {
-                 //alert(this.value.length)
-                 this.style.width = this.value.length +"ch"
-                //  this.style.backgroundColor  = "yellow"
-              }
-
-             // parentElement.childNodes[0].style.width = parentElement.childNodes[0].value.length  + "ch"
-              
-
-              crtInpelemntParentIcons = document.createElement("div");
-              crtInpelemntParentIcons.setAttribute("class", "cssInpelemntParentIcons")
-           
-               crtIconResize = document.createElement("p");
-               crtIconResize.innerText = "Resize";
-               crtIconPos = document.createElement("p");
-               crtIconPos.innerText = "Pos";
-
-
-               crtIconResize.onclick = function() {
-                  clickresizesqre(this) 
-               }
-
-               crtIconPos.onclick = function() {
-                  clickpos(this)
-               }
-
-               function clickpos(para1) {
-                  funcposText(para1) 
-               }
-
-               function clickresizesqre(para1) {
-                  funcresizeSqre(para1) 
-               }
-
-               crtInpelemntParentIcons.appendChild(crtIconResize);
-               crtInpelemntParentIcons.appendChild(crtIconPos)
-           
-              //   crtInpelemntParent.setAttribute("data-input-type", "input")
-
-
-    
-              crtInpelemntParent.appendChild(crtInpelemnt)
-              crtInpelemntParent.appendChild(crtInpelemntParentIcons)
-
-
-              document.getElementById("canvas").appendChild(crtInpelemntParent)
-              parentElement = crtInpelemntParent;
-            }
-
-
       
 
 
         function funcresizeText(e) {
             parentElement = e.parentNode.parentNode;
-           // alert(canceltoggle)
+            alert(canceltoggle)
             canceltoggle = true;
             controlVar = "inputresize";
            
@@ -249,19 +186,19 @@
 
         function funcposText(e) {
             parentElement = e.parentNode.parentNode;
-           // alert(controlVar)
+            alert(controlVar)
             canceltoggle = true;
             controlVar = "inppos";    
-           // alert(controlVar)      
+            alert(controlVar)      
            // e.parentNode.parentNode.childNodes[0].style.backgroundColor = "red"           
         }
 
         function funcresizeSqre(e) {
             parentElement = e.parentNode.parentNode;
-          //  alert(controlVar)
+            alert(controlVar)
             canceltoggle = true;
             controlVar = "sqreResize";    
-          //  alert(controlVar)      
+            alert(controlVar)      
            // e.parentNode.parentNode.childNodes[0].style.backgroundColor = "red"           
         }
 
@@ -302,13 +239,13 @@
         if(controlVar == "inputresize") {
         parentElement.childNodes[0].style.fontSize = ((Y_coor/8) + (X_coor/8)) + "px"
         parentElement.childNodes[0].style.width = parentElement.childNodes[0].value.length  + "ch"
-       // parentElement.style.backgroundColor = "yellow" 
+        parentElement.style.backgroundColor = "yellow" 
       } else if(controlVar == "inppos") {
-       //  parentElement.style.backgroundColor = "purple" 
+         parentElement.style.backgroundColor = "purple" 
          parentElement.style.top = (Y_coor + -2) + "px"
          parentElement.style.left = (X_coor + -2) + "px"
         } else if(controlVar == "sqreResize"){
-     //    parentElement.style.backgroundColor = "blue" 
+         parentElement.style.backgroundColor = "blue" 
          parentElement.style.height = Y_coor + "px"
          parentElement.style.width = X_coor + "px"
         } 
@@ -331,20 +268,8 @@
           canceltoggle = false;
           controlVar = "false"
         }
-        //alert(canceltoggle)
+        alert(canceltoggle)
      }
-
-
-     document.getElementById("favcolor").oninput = function() {
-        
-    //  console.log(this.value)
-    if(parentElement.dataset.inputType == "input") {
-      parentElement.childNodes[0].style.color = this.value;
-   } else {
-      parentElement.style.backgroundColor = this.value;
-   }
-   
-   }
 
      </script>
     </body>

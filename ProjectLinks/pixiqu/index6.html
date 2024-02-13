@@ -57,7 +57,7 @@
               crtInpelemnt = document.createElement("input")
               crtInpelemnt.setAttribute("class", "csscrtInpelemnt")
               crtInpelemnt.setAttribute("data-first-name", "input");
-              crtInpelemnt.setAttribute("value", "type here");
+              crtInpelemnt.setAttribute("value", "type");
          
               crtInpelemnt.oninput = function () {
                  //alert(this.value.length)
@@ -239,7 +239,7 @@
 
         function funcresizeText(e) {
             parentElement = e.parentNode.parentNode;
-           // alert(canceltoggle)
+            alert(canceltoggle)
             canceltoggle = true;
             controlVar = "inputresize";
            
@@ -249,19 +249,19 @@
 
         function funcposText(e) {
             parentElement = e.parentNode.parentNode;
-           // alert(controlVar)
+            alert(controlVar)
             canceltoggle = true;
             controlVar = "inppos";    
-           // alert(controlVar)      
+            alert(controlVar)      
            // e.parentNode.parentNode.childNodes[0].style.backgroundColor = "red"           
         }
 
         function funcresizeSqre(e) {
             parentElement = e.parentNode.parentNode;
-          //  alert(controlVar)
+            alert(controlVar)
             canceltoggle = true;
             controlVar = "sqreResize";    
-          //  alert(controlVar)      
+            alert(controlVar)      
            // e.parentNode.parentNode.childNodes[0].style.backgroundColor = "red"           
         }
 
@@ -302,13 +302,13 @@
         if(controlVar == "inputresize") {
         parentElement.childNodes[0].style.fontSize = ((Y_coor/8) + (X_coor/8)) + "px"
         parentElement.childNodes[0].style.width = parentElement.childNodes[0].value.length  + "ch"
-       // parentElement.style.backgroundColor = "yellow" 
+        parentElement.style.backgroundColor = "yellow" 
       } else if(controlVar == "inppos") {
-       //  parentElement.style.backgroundColor = "purple" 
+         parentElement.style.backgroundColor = "purple" 
          parentElement.style.top = (Y_coor + -2) + "px"
          parentElement.style.left = (X_coor + -2) + "px"
         } else if(controlVar == "sqreResize"){
-     //    parentElement.style.backgroundColor = "blue" 
+         parentElement.style.backgroundColor = "blue" 
          parentElement.style.height = Y_coor + "px"
          parentElement.style.width = X_coor + "px"
         } 
@@ -331,7 +331,7 @@
           canceltoggle = false;
           controlVar = "false"
         }
-        //alert(canceltoggle)
+        alert(canceltoggle)
      }
 
 
