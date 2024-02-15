@@ -53,8 +53,8 @@ p#datajson {
 }
 
 body {
-    background-color: #161616;
-    width: 99vw;
+    background-color: #161616d1;
+    width: 100vw;
 }
 
 div#country_row {
