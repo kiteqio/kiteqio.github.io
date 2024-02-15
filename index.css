@@ -6,7 +6,7 @@
     align-items: center;
     font-family: system-ui;
     font-weight: 100;
-    border: 2px solid #2a6599;
+    /* border: 2px solid #2a6599; */
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -213,6 +213,7 @@ input.input {
     width: 577px;
     overflow: hidden;
     box-shadow: -5px 4px 20px 2px #412a9f;
+    margin-top: 52px;
 }
 
 textarea.txtarea {
