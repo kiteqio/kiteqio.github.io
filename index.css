@@ -1,5 +1,5 @@
 *:not(head, script, html) {
-    background-size: 100% 100%;
+    background-size: 122% 100%;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -237,3 +237,5 @@ input.send {
     border-radius: 12px;
     background-color: #67d96e;
 }
+
+textarea.txtarea {}

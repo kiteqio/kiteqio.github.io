@@ -29,7 +29,45 @@
         height: 252px;
     }
 
+    .contact_view {
+        background-color: #ffffff;
+        height: 682px;
+        margin: 25px 0px;
+        border-radius: 22px;
+        width: 93%;
+        overflow: hidden;
+        box-shadow: -5px 4px 20px 2px #412a9f;
+        margin-top: 52px;
+    }
+    
+    input.input {
+        height: 54px;
+        /* margin: 17px 0px; */
+        border-radius: 23px;
+        width: 318px;
+        margin-bottom: 32px;
+        /* border: none; */
+        text-align: left;
+        font-size: 25px;
+        padding: 4px;
+        padding-left: 12px;
+        color: #454545;
+    }
+    
+    textarea.txtarea {
+        border-radius: 26px;
+        height: 80px;
+        width: 276px;
+        height: 234px;
+        font-size: 22px;
+        text-align: left;
+        padding: 22px;
+        color: grey;
+    }
+
 }
+
+
 
 
 
