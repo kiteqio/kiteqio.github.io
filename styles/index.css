@@ -1,0 +1,235 @@
+*:not(head, script, html) {
+    background-size: 122% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+    font-weight: 100;
+    /* border: 2px solid #2a6599; */
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    /* color: white; */
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+
+
+.menu {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 52px;
+    font-size: x-large;
+    background: #1e1e1e;
+}
+
+
+
+.container {
+    min-height: 65vh;
+    height: 500px;
+    width: 100%;
+}
+
+div#containerLogo {
+    background-image: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 54%)),
+url(../media/webimages/background2.jpg);
+    justify-content: space-around;
+}
+
+img#logo {
+    height: 80px;
+    width: 80px;
+}
+
+div#webdevelopment {
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)), url(../media/webimages/responsive.jpg);
+    height: 350px;
+    background-attachment: fixed;
+}
+
+.conterfillr {
+    height: 100%;
+    width: 100%;
+    background-color: #2f2f2f8c;
+}
+
+h1#webdvltitle {
+    font-size: 50px;
+    font-weight: 400;
+    color: pink;
+}
+
+div#frontendDevelopment {
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)), url(../media/webimages/frontend.jpg);
+    background-size: cover;
+}
+
+.frntcolumn {
+    height: 100%;
+    width: 50%;
+}
+
+div#frntcolumn0 {
+    background: #2525258c;
+}
+
+
+
+div#frntcolumn1 {
+    background: #290d7870;
+}
+
+.frntcolumn h1 {
+    color: white;
+    font-size: xxx-large;
+    word-break: break-word;
+}
+
+div#backendDevelopment {
+    height: 230px;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 26%), rgb(0 0 0 / 54%)), url(../media/webimages/engine.jpg);
+    font-size: xx-large;
+    color: white;
+}
+
+div#logocontner {
+    color: white;
+    font-size: x-large;
+}
+
+h1#motto {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: xx-large;
+}
+
+img.githubimg {
+    height: 58px;
+    width: 55px;
+}
+
+.linkscontainer {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    max-width: 1070px;
+}
+
+.contact {
+    width: 100%;
+}
+
+h1.contact_title {
+    color: white;
+    font-size: x-large;
+}
+
+.project {
+    width: 86%;
+    height: 75vh;
+    justify-content: space-between;
+    background-size: contain;
+    margin: 32px 0px;
+    /* border-radius: 42px; */
+    /* overflow: hidden; */
+    background-size: cover;
+}
+
+.projectBackground {
+    height: 85%;
+    width: 100%;
+}
+
+.projectlinks {
+    flex-direction: row;
+    width: 100%;
+    background-color: #2f2f2fa6;
+    height: 15%;
+}
+
+.project_container {
+    height: 100%;
+    width: 100%;
+    background-color: #29292970;
+}
+
+h1.project_title {
+    font-size: xxx-large;
+    color: white;
+    background-color: grey;
+    padding: 12px 12px;
+    border-radius: 12px;
+    text-decoration: underline;
+}
+
+.projectLink_container {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body {
+    background-color: #333333;
+}
+
+a.a_link {
+    height: 100%;
+    width: 100%;
+}
+
+.contact_view {
+    height: 550px;
+    width: 100%;
+}
+
+form#form_variable {
+    height: 530px;
+}
+
+.input {
+    height: 32px;
+    margin: 12px 0px;
+    width: 332px;
+    font-size: larger;
+    text-align: left;
+    padding: 12px;
+}
+
+textarea#message {
+    height: 200px;
+    width: 328px;
+    font-size: 22px;
+    text-align: left;
+    padding: 12px;
+}
+
+input.send {
+    height: 42px;
+    width: 100px;
+    margin: 22px;
+    border-radius: 22px;
+    font-size: larger;
+}
+
+.menu a {
+    color: white;
+}
+
+div#Portfolio {
+    background: wheat;
+}
+
+#Portfolio h1 {
+    color: white;
+    font-size: xx-large;
+}
