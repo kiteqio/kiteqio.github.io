@@ -226,6 +226,10 @@ input.send {
     margin: 22px;
     border-radius: 22px;
     font-size: larger;
+    background: none;
+    border: 2px solid;
+    padding: 12px 24px;
+    color: white;
 }
 
 .menu a {
