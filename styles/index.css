@@ -143,11 +143,16 @@ h1.contact_title {
     /* border-radius: 42px; */
     /* overflow: hidden; */
     background-size: cover;
+    min-width: 780px;
+    margin-left: 42px;
+    border-radius: 52px;
 }
 
 .projectBackground {
     height: 85%;
     width: 100%;
+    overflow: hidden;
+    background: none;
 }
 
 .projectlinks {
@@ -160,7 +165,7 @@ h1.contact_title {
 .project_container {
     height: 100%;
     width: 100%;
-    background-color: #29292970;
+    /* background-color: #29292970; */
 }
 
 h1.project_title {
@@ -185,6 +190,8 @@ body {
 a.a_link {
     height: 100%;
     width: 100%;
+    background: none;
+    overflow: non;
 }
 
 .contact_view {
@@ -232,4 +239,13 @@ div#Portfolio {
 #Portfolio h1 {
     color: white;
     font-size: xx-large;
+}
+
+.scrollContainer {
+    flex-direction: row;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+    height: 850px;
+    justify-content: flex-start;
 }
