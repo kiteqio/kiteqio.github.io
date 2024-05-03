@@ -1,0 +1,148 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <p id="datajson">data</p>
+    
+
+    <div id="country_row">
+    </div>
+    <div id="category_row">
+    </div>
+    <button id="refresh">Search</button>
+
+    <div id="news_container">
+        
+    </div>
+    <script>
+
+       dataNewsLoop = {
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+        {
+            "title": "iPhone 16: Everything We Know So Far - Gizmodo",
+            "author": "Florence Ion",
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "publishedAt": "2024-02-12T13:00:00Z",
+            "url": "https://gizmodo.com/apple-iphone-16-1851244717"
+        },
+        {
+            "title": "Usher’s Apple Music Super Bowl Halftime Show - NFL",
+            "author": null,
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "publishedAt": "2024-02-12T07:14:05Z",
+            "url": "https://www.youtube.com/watch?v=7hYbrdC_-s8"
+        }
+    ]
+    
+}
+
+        newsGenre = "business"
+        countryGenre = "us"
+
+        async function logNews() {
+            const dataNews = { "country": countryGenre, "category": newsGenre }; // Change the country as needed
+
+            const response = await fetch("https://passionbakes.co.uk/news.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(dataNews),
+            });
+
+            const data = await response.json();
+           
+            dataNewsLoop = data;
+            
+            if(data.articles.length >= 1) {
+                //datajson.innerText = data.articles[0].title
+                newsData_loop()
+
+            } else {
+                alert("no news")
+            }
+            console.log(data); // Log the JSON response
+        }
+
+        
+
+
+        function newsData_loop() {
+            document.getElementById("news_container").innerHTML = ""
+            for(a=0; a<=dataNewsLoop.articles.length + -1; a++) {
+
+                ItemParent = document.createElement("div")
+                ItemParent.setAttribute("class", "csscrtInpelemntParent")
+
+              ItemnewsText = document.createElement("a")
+              ItemnewsText.setAttribute("href", dataNewsLoop.articles[a].url)
+              ItemnewsText.setAttribute("class", "cssurlElement")
+              ItemnewsText.innerText = dataNewsLoop.articles[a].title
+
+
+              ItemParent.appendChild(ItemnewsText)
+
+            document.getElementById("news_container").appendChild(ItemParent)
+            }
+        }
+
+        newsData_loop()
+
+        
+
+        countryArray = [
+            ["New Zealand", "nz"],
+            ["United Kingdom", "gb"],
+            ["America", "us"],
+            ["Australia", "au"]
+        ]
+
+        GenreArray = ["business", "sports", "technology", "general", "health", "science", "entertainment"]
+       
+        for(b=0; b<=GenreArray.length + -1; b++) {
+            genre = document.createElement("p")
+            genre.setAttribute("class", "genre");
+            genre.innerText = GenreArray[b]
+            genre.onclick = function() {
+                  newsGenre = this.innerText;
+                  logNews()
+            }
+            category_row.appendChild(genre)
+        }
+
+        for(c=0; c<=countryArray.length + -1; c++) {
+            country = document.createElement("p")
+            country.setAttribute("class", "country");
+            country.setAttribute("data-input-type", countryArray[c][1]);
+            country.innerText = countryArray[c][0];
+            country.onclick = function() {
+                  
+
+                  
+                  countryGenre = this.dataset.inputType
+                  alert("countrygenre"+countryGenre)
+                  alert("newsgenre"+newsGenre)
+                  logNews()
+            }
+            country_row.appendChild(country)
+        }
+
+
+        document.getElementById("refresh").onclick = function() {
+           
+            alert(newsGenre)
+            alert(countryGenre)
+        }
+    </script>
+</body>
+</html>

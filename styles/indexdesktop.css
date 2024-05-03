@@ -1,0 +1,163 @@
+
+
+@media only screen and (orientation: landscape) {
+.menu {
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+div#aboutusrow {
+    flex-direction: row;
+    /* height: 430px; */
+    width: 80%;
+    justify-content: space-evenly;
+    /* margin-top: 124px; */
+}
+
+.socialicons {
+    flex-direction: row;
+    width: 79%;
+    justify-content: space-evenly;
+}
+
+img.socialions {
+    height: 59px;
+}
+
+div#socialcolumns {
+    flex-direction: column;
+    width: 40%;
+    height: 405px;
+    justify-content: space-evenly;
+}
+
+img.basaam {
+    height: 237px;
+    border-top-right-radius: 72px;
+    border-top-left-radius: 91px;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 118px;
+}
+
+div#abouuscolumn {
+    width: 40%;
+    /* height: 200px; */
+}
+
+#abouuscolumn h1 {
+    width: 82%;
+    font-size: xxx-large;
+}
+
+.skills {
+    width: 59%;
+    display: inline-block;
+    padding: 18px;
+    margin-top: 51px;
+}
+
+.skills p {
+    display: inline-block;
+    margin-left: 18px;
+    font-size: large;
+    background-color: #30a9e5;
+    padding: 5px 15px;
+    margin: 5px;
+    color: #e5e5e5;
+    border-radius: 35px;
+    margin-left: 57px;
+}
+
+.projects {
+    height: 503px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 16px;
+}
+
+.project {
+    height: 80%;
+    /* width: 317px; */
+    /* justify-content: space-around; */
+    /* min-width: 350px; */
+    /* margin-left: 52px; */
+}
+
+
+
+.projectimg {
+    height: 278px;
+    width: 94%;
+    background-size: 100% 100%;
+    border-radius: 12px;
+}
+
+.projecttxt p {
+    color: gray;
+}
+
+
+
+form#form_variable {
+    height: 419px;
+    width: 500px;
+    justify-content: space-evenly;
+}
+
+.contact_view {
+    height: 480px;
+    width: 600px;
+    /* border: 2px solid; */
+}
+
+.input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+    width: 400px;
+    /* font-size: x-large; */
+    padding: 2px;
+}
+
+textarea#message {
+    border: 1px solid;
+    height: 140px;
+    text-align: left;
+    width: 395px;
+}
+
+input.send {
+    background: none;
+    padding: 2px 78px;
+    height: 42px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  
+
+}
