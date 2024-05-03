@@ -6,7 +6,7 @@
     align-items: center;
     font-family: system-ui;
     font-weight: 100;
-    /* border: 2px solid #2a6599; */
+    border: 2px solid #2a6599;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -45,11 +45,11 @@ div#cubemain0 {
 }
 
 div#chracter {
-    position: absolute;
+    position: fixed;
     top: 80px;
     transform: rotateX(333deg) rotateY(-24deg);
     transform-style: preserve-3d;
-    display: none;
+    /* display: none; */
 }
 
 div#cubemain1 {
@@ -74,7 +74,7 @@ div#controller {
     top: 51%;
     left: 50%;
     z-index: 88;
-    display: none;
+    /* display: none; */
 }
 
 div#cubemain2 {}
@@ -106,4 +106,32 @@ div#cubemain4 {
 
 div#cubemain5 {
     transform: translate3d(1, 10px, 10px);
+}
+
+.bullet {}
+
+.bullet {
+    height: 100px;
+    width: 100px;
+    background: #ffff0057;
+    position: fixed;
+    z-index: 7495288;
+    position: fixed;
+}
+
+div {
+}
+
+.bulletCOntainer {
+    position: fixed;
+    background: #4823d1;
+    height: 100px;
+    width: 100px;
+}
+
+.bulletContainer {
+    position: fixed;
+    background: #c9bb16;
+    height: 100px;
+    width: 100px;
 }

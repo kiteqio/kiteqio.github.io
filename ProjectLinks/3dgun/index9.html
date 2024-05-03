@@ -44,18 +44,40 @@
   angleX = 0;
   distanceposZ = 0;
   distanceposX = 0;
+
   
-  addEventListener('mousemove', function() {
-    mousposClientY =  event.clientY;
-  mousposClientX =  event.clientX;
+  // Get the middle of the screen
+  const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
 
-  distanceposZ = distanceposZ + (angleY/5);
-  distanceposX = distanceposX + (angleX/5);
+        document.addEventListener('mousemove', function(event) {
+            // Calculate the difference between the current mouse position and the center of the screen
+            let diffX = event.clientX - centerX;
+            let diffY = event.clientY - centerY;
 
-  control()
-});
+            // Adjust these values to control the sensitivity and direction of the rotation
+            let rotateY = diffX * 0.5; // Horizontal movement affects Y rotation
+            let rotateX = -diffY * 0.5; // Vertical movement affects X rotation
+
+            // Apply the rotation
+            document.getElementById("cubemain2").style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+  
+//   addEventListener('mousemove', function() {
+//     mousposClientY =  event.clientY;
+//   mousposClientX =  event.clientX;
+
+//   distanceposZ = distanceposZ + (angleY/5);
+//   distanceposX = distanceposX + (angleX/5);
+
+//   //control()
+// });
 
 
+
+var distanceposX2 = 0;
+var distanceposY2 = 0;
 function control() {
     
     angle  = parseInt((Math.atan((-mousposClientY+controllerelemposy)/(-mousposClientX+controllerelemposx))/Math.PI) * 180);  
@@ -93,23 +115,41 @@ function control() {
   
     angleY = parseInt(angleY);
     angleX = parseInt(angleX);
-  
+
+    distanceposX2 = distanceposX2 + angleX;
+    distanceposY2 = distanceposY2 + angleY;
   //   angleY = angleY / 10;
   //   angleY = angleY / 10;
   
     
   
   // controllerelem.innerText = angle  + " angley" + angleY + " anglex" + angleX + "distanceposZ" + distanceposZ + "distanceposX" + distanceposX;
-  controllerelem.innerText = angle  + "angle" + distanceposX;
+  controllerelem.innerText = distanceposX2  + "angle" + distanceposY2;
   //  document.getElementById("cubemain1").style.transform = "rotateY("+keyTravelX+"deg) rotateX("+0+"deg)";
   //   document.getElementById("cubemain2").style.transform = "translate3d("+0+"px, "+0+"px, "+-keyTravelY+"px)";
-  document.getElementById("cubemain2").style.transform = "rotateY("+distanceposX+"deg) rotateX("+distanceposZ+"deg)";
-   
+
   
   document.getElementById("controller").style.transform = "rotate("+angle360+"deg)"
   console.log(angle);
   
   }
+
+
+
+  function move() {
+//document.getElementById("canvasgame2").style.transform = "translate3d("+-keyTravelX+"px, "+jumpy+"px, "+0+"px)";
+// document.getElementById("cubemain1").style.transform = "rotateY("+0+"deg) rotateX("+(-distanceposY2)+"deg)";
+   
+// document.getElementById("cubemain2").style.transform = "rotateY("+distanceposX2+"deg) rotateX("+(-0)+"deg)";
+
+console.log(distanceposX2)
+setTimeout(move, 20);
+}
+
+
+move()
+
+
 
 
 

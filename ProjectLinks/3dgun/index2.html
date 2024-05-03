@@ -115,8 +115,8 @@ function control() {
   //  document.getElementById("cubemain1").style.transform = "rotateY("+keyTravelX+"deg) rotateX("+0+"deg)";
   //   document.getElementById("cubemain2").style.transform = "translate3d("+0+"px, "+0+"px, "+-keyTravelY+"px)";
   document.getElementById("cubemain2").style.transform = "rotateY("+angle360+"deg) rotateX("+0+"deg)";
-   
-  
+  //document.getElementById("cubemain2").style.transform = "rotateY(" + angle360 + "deg) rotateX(" + Math.max(-90, Math.min(90, angleX)) + "deg)";
+  //document.getElementById("cubemain2").style.transform = "rotateY(" + angle360 + "deg) rotateX(" + angleX + "deg)";
   document.getElementById("controller").style.transform = "rotate("+angle360+"deg)"
   console.log(angle);
   
